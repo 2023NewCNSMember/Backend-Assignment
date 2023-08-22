@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
         //사용자 객체를 생성합니다.
-
+        User user = new User();
         //마켓 객체를 생성합니다.
-
+        Market market = new Market();
         //마켓의 물건들을 추가 합니다.
 
         //사용자의 초기 코인을 설정 합니다.
