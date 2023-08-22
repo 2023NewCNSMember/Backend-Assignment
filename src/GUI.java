@@ -2,7 +2,7 @@ public class GUI {
 
 
     public void roleGUI() {
-        System.out.println("----- 권한설정 -----");
+        System.out.println("----- 권한 설정 -----");
         System.out.println("1. ADMIN");
         System.out.println("2. USER");
     }
