@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 public class Market {
-    private ArrayList arr = new ArrayList();
+    HashMap<String, Integer> map = new HashMap<>();
 
-    public void addItem(String item){
-        this.arr.add(item);
-        System.out.println(this.arr);
+
+    public void addItem(String item, int price){
+        map.put(item,price);
     }
 }
