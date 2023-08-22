@@ -14,5 +14,6 @@ public class Main {
     //마켓에서 사용자가 주문한 물건들의 목록을 불러 옵니다.
     public static void main(String[] args) {
         System.out.println("Hello World!");
+        System.out.println("CNS 짱");
     }
 }
