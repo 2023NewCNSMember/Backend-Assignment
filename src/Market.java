@@ -26,15 +26,18 @@ public class Market{
 
     //아이템 검색 및 구매 로직
     public int buyItem(String item){
+        int check = 0; // item 값이 있는지 없는지 체크
+        String[] arr = new String[100];
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
             String name = entry.getKey();
             if (name.contains(item)) {
                 this.itemPrice=entry.getValue();
                 list.add(entry.getKey());
+                check+=1;
             }
-            else {
-                System.out.println("잘못된 값을 입력하셨습니다.");
-            }
+        }
+        if(check == 0) {
+            System.out.println("잘못 입력하셨습니다.");
         }
         return this.itemPrice;
     }
