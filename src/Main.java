@@ -50,11 +50,40 @@ public class Main {
                 }
             }
 
+            // 유저 페이지
+            else if (role == 2) {
+                while (true) {
+                    gui.martGUI(); // GUI 세팅
+                    int userNumber = sc.nextInt();
 
-        //사용자가 물건을 구매합니다.
+                    //사용자가 물건을 구매합니다.
+                    if (userNumber == 1) {
+                        market.showItem();
+                        String item = sc.next();
+                        market.buyItem(item);
+                        //구매후 사용자의 코인 잔액을 출력합니다.
+                        System.out.println("구매후 코인은 " + user.getCoin() + "원 입니다.");
+                    }
+                    // 코인 조회
+                    else if (userNumber == 2) {
+                        System.out.println("보유중인 코인은 " + user.getCoin() + "원 입니다.");
+                    }
+                    // 권한 설정
+                    else if (userNumber == 3) {
+                        break;
+                    }
+                    // 시스템 종료
+                    else if (userNumber == 4) {
+                        System.exit(1);
+                    } else {
+                        System.out.println("번호를 잘못 입력하셨습니다.");
+                    }
+                }
+            }
 
-        //구매후 사용자의 코인 잔액을 출력합니다.
 
-        //마켓에서 사용자가 주문한 물건들의 목록을 불러 옵니다.
+
+
+        }
     }
 }
