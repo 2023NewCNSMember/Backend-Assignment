@@ -59,6 +59,7 @@ public class Main {
                     //사용자가 물건을 구매합니다.
                     if (userNumber == 1) {
                         market.showItem();
+                        System.out.println("구매할 물건을 입력해 주세요.");
                         String item = sc.next();
                         market.buyItem(item);
                         //구매후 사용자의 코인 잔액을 출력합니다.
