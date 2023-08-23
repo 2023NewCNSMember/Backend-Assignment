@@ -26,7 +26,6 @@ public class Market{
 
     //아이템 검색 및 구매 로직
     public int buyItem(String item){
-        String[] arr = new String[100];
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
             String name = entry.getKey();
             if (name.contains(item)) {
