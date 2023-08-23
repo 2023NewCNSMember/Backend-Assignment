@@ -41,8 +41,13 @@ public class Market{
     }
     // 구매한 물건 조회
     public void showList(){
-        for (int i=0; i<list.size(); i++){
-            System.out.println(i+1 + ". : " + list.get(i) + " 구매함.");
+        if (list.size() == 0){
+            System.out.println("물건이 존재하지 않습니다.");
+        }
+        else {
+            for (int i=0; i<list.size(); i++){
+                System.out.println(i+1 + ". : " + list.get(i) + " 구매함.");
+            }
         }
     }
 
